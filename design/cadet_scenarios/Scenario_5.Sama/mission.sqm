@@ -1,0 +1,190 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"vbs2_people_us_ussf_rifleman",
+		"vbs2_weapons_rifles_colt_m4_us_m4a1",
+		"vbs2_weapons_pistols_glock_17",
+		"caweapons",
+		"caa10",
+		"cacharacters",
+		"vbs2_core",
+		"caair",
+		"vbs2_vehicles_air_planes_lockheed_c130_au_c130j",
+		"vbs2_people_au_adf_pilot_fighter",
+		"vbs2_vehicles_air_planes_predator_au_predator",
+		"vbs2_vehicles_air_planes_boeing_f18_au_f18",
+		"vbs2_weapons_cannons_m61_vulcan",
+		"vbs2_weapons_launchers_gbu12",
+		"vbs2_vehicles_air_helicopters_sikorsky_s65_us_ch53",
+		"vbs2_people_us_usmc_pilot_heli",
+		"vbs2_weapons_pistols_beretta_m92"
+	};
+	addOnsAuto[]=
+	{
+		"vbs2_people_au_adf_rifleman",
+		"vbs2_weapons_rifles_ai_articwarfare_au_sr98",
+		"vbs2_weapons_pistols_browning_hipower",
+		"caweapons",
+		"vbs2_vehicles_air_helicopters_bell_uh1_nz_uh1h",
+		"vbs2_people_au_adf_pilot_heli",
+		"vbs2_vehicles_air_helicopters_bell_ah1_us_ah1z",
+		"vbs2_weapons_launchers_70mmrocket",
+		"vbs2_weapons_launchers_agm114hellfire",
+		"vbs2_weapons_cannons_m197_gatling",
+		"vbs2_people_us_usmc_pilot_heli",
+		"vbs2_weapons_pistols_beretta_m92",
+		"vbs2_vehicles_air_helicopters_boeing_h46_us_h46",
+		"vbs2_vehicles_air_helicopters_sikorsky_s65_us_ch53",
+		"caair",
+		"vbs2_core",
+		"vbs2_vehicles_air_planes_predator_au_predator",
+		"cacharacters",
+		"vbs2_vehicles_air_helicopters_bell_uh1_us_uh1y",
+		"vbs2_people_us_ussf_rifleman",
+		"vbs2_weapons_rifles_colt_m4_us_m4a1",
+		"vbs2_weapons_pistols_glock_17",
+		"caa10",
+		"vbs2_vehicles_air_planes_lockheed_c130_au_c130j",
+		"vbs2_people_au_adf_pilot_fighter",
+		"vbs2_vehicles_air_planes_boeing_f18_au_f18",
+		"vbs2_weapons_cannons_m61_vulcan",
+		"vbs2_weapons_launchers_gbu12"
+	};
+	randomSeed=9170947;
+	class Intel
+	{
+		briefingName="Scenario_5";
+		briefingDescription="Scenario_5";
+		startWeather=0.000000;
+		forecastWeather=0.000000;
+		year=1907;
+		month=3;
+		day=1;
+		hour=8;
+	};
+	class Groups
+	{
+		items=4;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={16121.500000,13.000000,17598.599609};
+					special="NONE";
+					id=0;
+					side="WEST";
+					vehicle="VBS2_us_soc_rifleman_A_m4";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+					text="unit_0";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={15298.400391,11.967987,15177.200195};
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="SoldierWPilot";
+					leader=1;
+					skill=0.600000;
+					text="unit_2";
+					description="A-10 Pilot ";
+				};
+			};
+		};
+		class Item2
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={16118.200195,15.272034,18049.300781};
+					special="NONE";
+					id=2;
+					side="CIV";
+					vehicle="Civilian";
+					leader=1;
+					skill=0.600000;
+					text="unit_4";
+					description="Predator MQ-1 Pilot ";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={16121.500000,13.000000,17591.599609};
+					special="NONE";
+					id=3;
+					side="WEST";
+					vehicle="VBS2_US_MC_HeliPilot_W_BerettaM9";
+					leader=1;
+					skill=0.600000;
+					text="unit_6";
+					description="CH-53E Pilot ";
+				};
+			};
+		};
+	};
+};
+class Intro
+{
+	randomSeed=11365379;
+	class Intel
+	{
+		startWeather=0.000000;
+		forecastWeather=0.000000;
+		year=1907;
+		month=3;
+		day=1;
+		hour=8;
+	};
+};
+class OutroWin
+{
+	randomSeed=12435971;
+	class Intel
+	{
+		startWeather=0.000000;
+		forecastWeather=0.000000;
+		year=1907;
+		month=3;
+		day=1;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	randomSeed=849411;
+	class Intel
+	{
+		startWeather=0.000000;
+		forecastWeather=0.000000;
+		year=1907;
+		month=3;
+		day=1;
+		hour=8;
+	};
+};

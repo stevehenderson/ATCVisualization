@@ -1,0 +1,199 @@
+class _prefix_0
+{
+	objectType="prefix";
+	class Arguments
+	{
+		TITLE="Scenario_5";
+		DESCRIPTION="Scenario_5";
+		ADDON[]=
+		{
+			"vbs2_people_us_ussf_rifleman",
+			"vbs2_weapons_rifles_colt_m4_us_m4a1",
+			"vbs2_weapons_pistols_glock_17",
+			"caweapons",
+			"caa10",
+			"cacharacters",
+			"vbs2_core",
+			"caair",
+			"vbs2_vehicles_air_planes_lockheed_c130_au_c130j",
+			"vbs2_people_au_adf_pilot_fighter",
+			"vbs2_vehicles_air_planes_predator_au_predator",
+			"vbs2_vehicles_air_planes_boeing_f18_au_f18",
+			"vbs2_weapons_cannons_m61_vulcan",
+			"vbs2_weapons_launchers_gbu12",
+			"vbs2_vehicles_air_helicopters_sikorsky_s65_us_ch53",
+			"vbs2_people_us_usmc_pilot_heli",
+			"vbs2_weapons_pistols_beretta_m92"
+		};
+	};
+};
+class _unit_0
+{
+	objectType="unit";
+	class Arguments
+	{
+		SIDE="WEST";
+		TYPE="VBS2_us_soc_rifleman_A_m4";
+		PLAYER="true";
+		PLAYABLE="true";
+		ADVANCED="";
+		BG1="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		BG2="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		BG3="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		BG4="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		SKILL="0.60000";
+		HEALTH="1.00000";
+		AMMO="1.00000";
+		PROBOFPRES="1.00000";
+		POSITION="[16121.5,17598.6,13]";
+		COLOR="[0.6,0.6,1]";
+		SUB_TEAM="";
+		DISPLAY_NAME="SF Soldier - M4A1";
+		DISPLAY_NAME_TREE="SF Soldier - M4A.. (P)";
+		PARENT_UNIT="";
+	};
+};
+class _unit_2
+{
+	objectType="unit";
+	class Arguments
+	{
+		DESCRIPTION="A-10 Pilot ";
+		SIDE="WEST";
+		TYPE="SoldierWPilot";
+		POSITION="[15298.4,15177.2,0]";
+		COLOR="[0.6,0.6,1]";
+		COMMANDER="";
+		DRIVER="";
+		GUNNER="";
+		DISPLAY_NAME="Pilot";
+		DISPLAY_NAME_TREE="Pilot";
+		PARENT="";
+		PARENT_UNIT="";
+	};
+};
+class _group_2
+{
+	objectType="group";
+	class Arguments
+	{
+		NAME="CIVL 1-1-A";
+		POSITION="[16118.20020, 18049.29883, 115.27203]";
+		SIDE="CIV";
+	};
+};
+class _vehicle_8
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		SUB_TEAM="";
+		SIDE="all";
+		TYPE="vbs2_AU_RAAF_predator";
+		ADVANCED="";
+		IS_ADVANCED="true";
+		BEHAVIOUR="CARELESS";
+		SPECIAL="FLY";
+		BG1="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		FUEL="1.00000";
+		BG2="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		HEALTH="1.00000";
+		BG3="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		AMMO="1.00000";
+		BG4="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		PROBOFPRES="1.00000";
+		POSITION="[16118.2,18049.3,115.272]";
+		PARENT="_group_2";
+		COLOR="[0.5,1,0.5]";
+		FIRSTTASK="";
+		DISPLAY_NAME="Predator MQ-1";
+		DISPLAY_NAME_TREE="Predator MQ-1";
+	};
+};
+class _unit_4
+{
+	objectType="unit";
+	class Arguments
+	{
+		DESCRIPTION="Predator MQ-1 Pilot ";
+		SIDE="WEST";
+		TYPE="Civilian";
+		POSITION="[16118.2,18049.3,0]";
+		COLOR="[0.5,1,0.5]";
+		COMMANDER="";
+		DRIVER="_vehicle_8";
+		GUNNER="";
+		DISPLAY_NAME="Civilian";
+		DISPLAY_NAME_TREE="Civilian";
+		PARENT="_group_2";
+		PARENT_UNIT="";
+	};
+};
+class _waypoint_19
+{
+	objectType="waypoint";
+	class Arguments
+	{
+		POSITION="[16118.46094, 16020.95996]";
+		TYPE="MOVE";
+		DESCRIPTION="Scenario_XXX";
+		SPEED="LIMITED";
+		PARENT="_group_2";
+		PARENT_UNIT="_unit_4";
+		PREVTASK="";
+		NEXTTASK="";
+		NAME="";
+	};
+};
+class _vehicle_9
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		SUB_TEAM="";
+		SIDE="all";
+		TYPE="vbs2_us_mc_ch53e_b";
+		ADVANCED="";
+		IS_ADVANCED="true";
+		SPECIAL="FLY";
+		BG1="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		FUEL="1.00000";
+		BG2="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		HEALTH="1.00000";
+		BG3="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		AMMO="1.00000";
+		BG4="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		PROBOFPRES="1.00000";
+		POSITION="[16121.5,17591.6,63]";
+		PARENT="";
+		COLOR="[0.6,0.6,1]";
+		DISPLAY_NAME="CH-53E";
+		DISPLAY_NAME_TREE="CH-53E";
+	};
+};
+class _unit_6
+{
+	objectType="unit";
+	class Arguments
+	{
+		DESCRIPTION="CH-53E Pilot ";
+		SIDE="WEST";
+		TYPE="VBS2_US_MC_HeliPilot_W_BerettaM9";
+		POSITION="[16121.5,17591.6,0]";
+		COLOR="[0.6,0.6,1]";
+		COMMANDER="";
+		DRIVER="_vehicle_9";
+		GUNNER="";
+		DISPLAY_NAME="Heli Pilot - Beretta M9";
+		DISPLAY_NAME_TREE="Heli Pilot - Ber..";
+		PARENT="";
+		PARENT_UNIT="";
+	};
+};
+class _postfix_0
+{
+	objectType="postfix";
+	class Arguments
+	{
+	};
+};

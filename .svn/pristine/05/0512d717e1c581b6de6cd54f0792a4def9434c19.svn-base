@@ -1,0 +1,233 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"cawater",
+		"cacharacters",
+		"vbs2_vehicles_land_wheeled_datsun_620_iq_datsun_620",
+		"vbs2_weapons_machineguns_kalashnikov_pk_pkm",
+		"vbs2_iq_civ",
+		"vbs2_weapons_rifles_kalashnikov_ak47_akm"
+	};
+	addOnsAuto[]=
+	{
+		"cawater",
+		"cacharacters",
+		"vbs2_vehicles_land_wheeled_datsun_620_iq_datsun_620",
+		"vbs2_weapons_machineguns_kalashnikov_pk_pkm",
+		"vbs2_iq_civ",
+		"vbs2_weapons_rifles_kalashnikov_ak47_akm"
+	};
+	randomSeed=2593795;
+	class Intel
+	{
+		briefingName="Scenario7";
+		briefingDescription="Scenario7";
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+	class Groups
+	{
+		items=5;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13299.900391,12.564683,8962.379883};
+					special="NONE";
+					id=0;
+					side="WEST";
+					vehicle="VBS2_AU_Army_ATsoldier_D_CarlGustav";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+					text="unit_15";
+					description="Observer";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={12698.200195,0.199862,9886.540039};
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					leader=1;
+					skill=0.600000;
+					text="unit_6";
+					description="ARH Pilot ";
+				};
+				class Item1
+				{
+					position[]={12698.200195,0.199862,9886.540039};
+					special="NONE";
+					id=2;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					skill=0.600000;
+					text="unit_7";
+					description="ARH Commander ";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={13248.599609,13.317862,9876.299805};
+					special="NONE";
+					id=3;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					leader=1;
+					skill=0.600000;
+					text="unit_8";
+					description="ARH Pilot ";
+				};
+				class Item1
+				{
+					position[]={13248.599609,13.317862,9876.299805};
+					special="NONE";
+					id=4;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					skill=0.600000;
+					text="unit_9";
+					description="ARH Commander ";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={13793.900391,23.523298,9881.419922};
+					special="NONE";
+					id=5;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					leader=1;
+					skill=0.600000;
+					text="unit_10";
+					description="ARH Pilot ";
+				};
+				class Item1
+				{
+					position[]={13793.900391,23.523298,9881.419922};
+					special="NONE";
+					id=6;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					skill=0.600000;
+					text="unit_11";
+					description="ARH Commander ";
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={13261.299805,11.885512,8981.250000};
+					special="NONE";
+					id=7;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					leader=1;
+					skill=0.600000;
+					text="unit_12";
+					description="S-70 Pilot ";
+				};
+				class Item1
+				{
+					position[]={13261.299805,11.885512,8981.250000};
+					special="NONE";
+					id=8;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					skill=0.600000;
+					text="unit_13";
+					description="S-70 Commander ";
+				};
+				class Item2
+				{
+					position[]={13261.299805,11.885512,8981.250000};
+					special="NONE";
+					id=9;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					skill=0.600000;
+					text="unit_14";
+					description="S-70 Gunner ";
+				};
+			};
+		};
+	};
+};
+class Intro
+{
+	randomSeed=12833283;
+	class Intel
+	{
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroWin
+{
+	randomSeed=12642819;
+	class Intel
+	{
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	randomSeed=11193347;
+	class Intel
+	{
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};

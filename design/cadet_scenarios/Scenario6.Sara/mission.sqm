@@ -1,0 +1,262 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"vbs2_vehicles_air_helicopters_boeing_h47_au_ch47",
+		"vbs2_weapons_machineguns_ge_m134",
+		"vbs2_vehicles_air_helicopters_boeing_h47",
+		"vbs2_people_au_adf_pilot_heli",
+		"vbs2_weapons_pistols_browning_hipower",
+		"caweapons",
+		"vbs2_vehicles_air_helicopters_eurocopter_ec665_au_arh",
+		"vbs2_weapons_launchers_70mmrocket",
+		"vbs2_weapons_launchers_agm114hellfire",
+		"vbs2_weapons_cannons_giat30",
+		"vbs2_vehicles_air_helicopters_sikorsky_h70_au_s70",
+		"vbs2_weapons_machineguns_fn_mag_au_mag58",
+		"vbs2_people_au_adf_rifleman",
+		"vbs2_weapons_rifles_steyr_aug_au_f88",
+		"vbs2_weapons_launchers_bofors_carlgustav_carlgustav_m2"
+	};
+	addOnsAuto[]=
+	{
+		"vbs2_vehicles_air_helicopters_boeing_h47_au_ch47",
+		"vbs2_weapons_machineguns_ge_m134",
+		"vbs2_vehicles_air_helicopters_boeing_h47",
+		"vbs2_people_au_adf_pilot_heli",
+		"vbs2_weapons_pistols_browning_hipower",
+		"caweapons",
+		"vbs2_vehicles_air_helicopters_eurocopter_ec665_au_arh",
+		"vbs2_weapons_launchers_70mmrocket",
+		"vbs2_weapons_launchers_agm114hellfire",
+		"vbs2_weapons_cannons_giat30",
+		"vbs2_vehicles_air_helicopters_sikorsky_h70_au_s70",
+		"vbs2_weapons_machineguns_fn_mag_au_mag58",
+		"vbs2_people_au_adf_rifleman",
+		"vbs2_weapons_rifles_steyr_aug_au_f88",
+		"vbs2_weapons_launchers_bofors_carlgustav_carlgustav_m2"
+	};
+	randomSeed=7095299;
+	class Intel
+	{
+		briefingName="Scenario6";
+		briefingDescription="Scenario6";
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+	class Groups
+	{
+		items=5;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13192.299805,15.278967,8947.030273};
+					special="NONE";
+					id=0;
+					side="WEST";
+					vehicle="VBS2_AU_Army_ATsoldier_D_CarlGustav";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+					text="unit_14";
+					description="Observer";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={14106.200195,42.301105,9464.139648};
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					leader=1;
+					skill=0.600000;
+					text="unit_4";
+					description="ARH Pilot ";
+				};
+				class Item1
+				{
+					position[]={14106.200195,42.301105,9464.139648};
+					special="NONE";
+					id=2;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					skill=0.600000;
+					text="unit_5";
+					description="ARH Commander ";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={12045.400391,153.418488,8091.990234};
+					special="NONE";
+					id=3;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					leader=1;
+					skill=0.600000;
+					text="unit_6";
+					description="CH-47D Pilot ";
+				};
+				class Item1
+				{
+					position[]={12045.400391,153.418488,8091.990234};
+					special="NONE";
+					id=4;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					skill=0.600000;
+					text="unit_7";
+					description="CH-47D Commander ";
+				};
+				class Item2
+				{
+					position[]={12045.400391,153.418488,8091.990234};
+					special="NONE";
+					id=5;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					skill=0.600000;
+					text="unit_8";
+					description="CH-47D Gunner ";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={13228.799805,13.539598,8971.250000};
+					special="NONE";
+					id=6;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					leader=1;
+					skill=0.600000;
+					text="unit_9";
+					description="S-70 Pilot ";
+				};
+				class Item1
+				{
+					position[]={13228.799805,13.539598,8971.250000};
+					special="NONE";
+					id=7;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					skill=0.600000;
+					text="unit_10";
+					description="S-70 Commander ";
+				};
+				class Item2
+				{
+					position[]={13228.799805,13.539598,8971.250000};
+					special="NONE";
+					id=8;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					skill=0.600000;
+					text="unit_11";
+					description="S-70 Gunner ";
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={14026.299805,21.174339,8436.250000};
+					special="NONE";
+					id=9;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					leader=1;
+					skill=0.600000;
+					text="unit_12";
+					description="ARH Pilot ";
+				};
+				class Item1
+				{
+					position[]={14026.299805,21.174339,8436.250000};
+					special="NONE";
+					id=10;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					skill=0.600000;
+					text="unit_13";
+					description="ARH Commander ";
+				};
+			};
+		};
+	};
+};
+class Intro
+{
+	randomSeed=9938947;
+	class Intel
+	{
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroWin
+{
+	randomSeed=11808771;
+	class Intel
+	{
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	randomSeed=9024515;
+	class Intel
+	{
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};

@@ -1,0 +1,752 @@
+class _prefix_0
+{
+	objectType="prefix";
+	class Arguments
+	{
+		TITLE="Scenario3";
+		DESCRIPTION="Scenario3";
+		ADDON[]=
+		{
+			"vbs2_vehicles_air_helicopters_sikorsky_h70_au_s70",
+			"vbs2_weapons_machineguns_fn_mag_au_mag58",
+			"vbs2_people_au_adf_pilot_heli",
+			"vbs2_weapons_pistols_browning_hipower",
+			"caweapons",
+			"vbs2_vehicles_air_helicopters_eurocopter_ec665_au_arh",
+			"vbs2_weapons_launchers_70mmrocket",
+			"vbs2_weapons_launchers_agm114hellfire",
+			"vbs2_weapons_cannons_giat30",
+			"vbs2_vehicles_land_static_m3_tripod_us_m3_tripod",
+			"vbs2_weapons_machineguns_browning_m2",
+			"vbs2_people_us_usmc_rifleman",
+			"vbs2_weapons_rifles_armalite_m16_us_m16",
+			"vbs2_people_au_adf_rifleman",
+			"vbs2_weapons_rifles_steyr_aug_au_f88",
+			"vbs2_weapons_launchers_bofors_carlgustav_carlgustav_m2"
+		};
+	};
+};
+class _group_0
+{
+	objectType="group";
+	class Arguments
+	{
+		NAME="WEST 1-1-A";
+		POSITION="[13248.6,8990.54,47.403]";
+		SIDE="WEST";
+	};
+};
+class _group_1
+{
+	objectType="group";
+	class Arguments
+	{
+		NAME="WEST 1-1-B";
+		POSITION="[12316.8,9361.74,48.1119]";
+		SIDE="WEST";
+		FIRSTTASK="";
+	};
+};
+class _unit_8
+{
+	objectType="unit";
+	class Arguments
+	{
+		NAME="Observer";
+		SIDE="WEST";
+		TYPE="VBS2_AU_Army_ATsoldier_D_CarlGustav";
+		PLAYER="true";
+		PLAYABLE="true";
+		ADVANCED="";
+		IS_ADVANCED="true";
+		BG1="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		BG2="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		BG3="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		BG4="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		SKILL="0.60000";
+		HEALTH="1.00000";
+		AMMO="1.00000";
+		PROBOFPRES="1.00000";
+		POSITION="[13243.50000, 8931.66016, 15.73478]";
+		COLOR="[0.6,0.6,1]";
+		SUB_TEAM="";
+		DISPLAY_NAME="AT Soldier - CarlGustav M2 (Observer)";
+		DISPLAY_NAME_TREE="AT Soldier - Car.. (Observer) (P)";
+		PARENT_UNIT="";
+	};
+};
+class _vehicle_0
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		NAME="Dummy_UAV";
+		SUB_TEAM="";
+		SIDE="all";
+		TYPE="VBS2_AU_Army_S70_W";
+		ADVANCED="";
+		IS_ADVANCED="true";
+		BEHAVIOUR="CARELESS";
+		SPECIAL="FLY";
+		BG1="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		FUEL="0.97576";
+		BG2="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		HEALTH="1.00000";
+		BG3="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		AMMO="1.00000";
+		BG4="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		PROBOFPRES="1.00000";
+		POSITION="[13248.6,8990.54,61.1993]";
+		PARENT="_group_0";
+		COLOR="[0.6,0.6,1]";
+		DISPLAY_NAME="S-70 (Dummy_UAV)";
+		DISPLAY_NAME_TREE="S-70 (Dummy_UAV)";
+	};
+};
+class _unit_1
+{
+	objectType="unit";
+	class Arguments
+	{
+		DESCRIPTION="S-70 Pilot ";
+		SIDE="WEST";
+		TYPE="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+		POSITION="[13248.6,8990.54,0]";
+		COLOR="[0.6,0.6,1]";
+		COMMANDER="";
+		DRIVER="_vehicle_0";
+		GUNNER="";
+		LEADER="";
+		DISPLAY_NAME="Heli Pilot - Browning HP";
+		DISPLAY_NAME_TREE="Heli Pilot - Bro..";
+		PARENT="_group_0";
+		PARENT_UNIT="";
+	};
+};
+class _unit_2
+{
+	objectType="unit";
+	class Arguments
+	{
+		DESCRIPTION="S-70 Commander ";
+		SIDE="WEST";
+		TYPE="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+		POSITION="[13248.6,8990.54,0]";
+		COLOR="[0.6,0.6,1]";
+		COMMANDER="";
+		DRIVER="";
+		GUNNER="_vehicle_0";
+		GUNNER_TURRET="[0]";
+		LEADER="_unit_1";
+		DISPLAY_NAME="Heli Pilot - Browning HP";
+		DISPLAY_NAME_TREE="Heli Pilot - Bro..";
+		PARENT="_group_0";
+		PARENT_UNIT="";
+	};
+};
+class _unit_3
+{
+	objectType="unit";
+	class Arguments
+	{
+		DESCRIPTION="S-70 Gunner ";
+		SIDE="WEST";
+		TYPE="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+		POSITION="[13248.6,8990.54,0]";
+		COLOR="[0.6,0.6,1]";
+		COMMANDER="";
+		DRIVER="";
+		GUNNER="_vehicle_0";
+		GUNNER_TURRET="[1]";
+		LEADER="_unit_1";
+		DISPLAY_NAME="Heli Pilot - Browning HP";
+		DISPLAY_NAME_TREE="Heli Pilot - Bro..";
+		PARENT="_group_0";
+		PARENT_UNIT="";
+	};
+};
+class _marker_0
+{
+	objectType="marker";
+	class Arguments
+	{
+		POSITION="[13248.6,8990.54,47.403]";
+		NAME="m1";
+		MARKER_TYPE="TacticalMarker";
+		COLOR="ColorBlue";
+		PARENT="_group_0";
+		PARENT_UNIT="_unit_1";
+		DISPLAY_NAME="Marker m1";
+		SIDE="F1";
+		UNIT="I11";
+		SIZE="M2";
+		MODIFIER="S0";
+		PREVIEW_SIDE="\vbs2\ui\tacticmarkers\data\Frames\Friend_Units";
+		PREVIEW_UNIT="\vbs2\ui\tacticmarkers\data\Icons\Aviation";
+		PREVIEW_SIZE="\vbs2\ui\tacticmarkers\data\Modifiers\S_Team";
+		PREVIEW_MODIFIER="\vbs2\ui\tacticmarkers\data\SubRoles\Blanc";
+	};
+	class DynamicArguments
+	{
+		name="TacticalMarker";
+		class Params
+		{
+			class SIDE
+			{
+				type="configEx";
+				subtype="cfgTacticalSymbols.Sides,name";
+				description="Side Icon";
+				onInit="_control_SIDE call _func_COC_Marker_DlgChanged";
+				onChanged="_this call _func_COC_Marker_DlgChanged";
+			};
+			class SIDE_POSITION
+			{
+				type="number";
+				subtype="range(-0.05, 0.05)";
+				description="Side Icon";
+				default="0";
+				hidden=1;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_SIDE,""X""] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerPosition.sqf"")";
+			};
+			class SIDE_DOWN
+			{
+				type="number";
+				subtype="range(-0.05, 0.05)";
+				default="0";
+				hidden=1;
+				x=0.362500;
+				y=0.140000;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_SIDE,""Y""] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerPosition.sqf"")";
+			};
+			class SIDE_SCALE
+			{
+				type="number";
+				subtype="range(0.5, 1.5)";
+				description="Scale";
+				default="1";
+				x=0.210000;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_SIDE,_control_SIDE_POSITION,_control_SIDE_DOWN] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerScale.sqf"")";
+			};
+			class UNIT
+			{
+				type="configEx";
+				subtype="cfgTacticalSymbols.Units,name";
+				description="Unit Icon";
+				onChanged="_this call _func_COC_Marker_DlgChanged";
+			};
+			class UNIT_POSITION
+			{
+				type="number";
+				subtype="range(-0.05, 0.05)";
+				default="0";
+				hidden=1;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_UNIT,""X""] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerPosition.sqf"")";
+			};
+			class UNIT_DOWN
+			{
+				type="number";
+				subtype="range(-0.05, 0.05)";
+				default="0";
+				hidden=1;
+				x=0.362500;
+				y=0.200000;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_UNIT,""Y""] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerPosition.sqf"")";
+			};
+			class UNIT_SCALE
+			{
+				type="number";
+				subtype="range(0.5, 1.5)";
+				description="Scale";
+				default="1";
+				x=0.210000;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_UNIT,_control_UNIT_POSITION,_control_UNIT_DOWN] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerScale.sqf"")";
+			};
+			class SIZE
+			{
+				type="configEx";
+				subtype="cfgTacticalSymbols.Size,name";
+				description="Size Icon";
+				onChanged="_this call _func_COC_Marker_DlgChanged";
+			};
+			class SIZE_POSITION
+			{
+				type="number";
+				subtype="range(-0.05, 0.05)";
+				default="0";
+				hidden=1;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_SIZE,""X""] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerPosition.sqf"")";
+			};
+			class SIZE_DOWN
+			{
+				type="number";
+				subtype="range(-0.05, 0.05)";
+				default="0";
+				hidden=1;
+				x=0.362500;
+				y=0.260000;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_SIZE,""Y""] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerPosition.sqf"")";
+			};
+			class SIZE_SCALE
+			{
+				type="number";
+				subtype="range(0.5, 1.5)";
+				description="Scale";
+				default="1";
+				x=0.210000;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_SIZE,_control_SIZE_POSITION,_control_SIZE_DOWN] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerScale.sqf"")";
+			};
+			class MODIFIER
+			{
+				type="configEx";
+				subtype="cfgTacticalSymbols.Modifiers,name";
+				description="Modifier Icon";
+				onChanged="_this call _func_COC_Marker_DlgChanged";
+			};
+			class MODIFIER_POSITION
+			{
+				type="number";
+				subtype="range(-0.05, 0.05)";
+				default="0";
+				hidden=1;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_MODIFIER,""X""] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerPosition.sqf"")";
+			};
+			class MODIFIER_DOWN
+			{
+				type="number";
+				subtype="range(-0.05, 0.05)";
+				default="0";
+				hidden=1;
+				x=0.362500;
+				y=0.320000;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_MODIFIER,""Y""] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerPosition.sqf"")";
+			};
+			class MODIFIER_SCALE
+			{
+				type="number";
+				subtype="range(0.5, 1.5)";
+				description="Scale";
+				default="1";
+				x=0.210000;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_MODIFIER,_control_MODIFIER_POSITION,_control_MODIFIER_DOWN] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerScale.sqf"")";
+			};
+			class PREVIEW_SIDE
+			{
+				type="picture";
+				description="Preview";
+			};
+			class PREVIEW_UNIT
+			{
+				type="picture";
+				x=0.210000;
+				y=0.350000;
+				w=0.150000;
+				h=0.200000;
+			};
+			class PREVIEW_SIZE
+			{
+				type="picture";
+				x=0.210000;
+				y=0.350000;
+				w=0.150000;
+				h=0.200000;
+			};
+			class PREVIEW_MODIFIER
+			{
+				type="picture";
+				x=0.210000;
+				y=0.350000;
+				w=0.150000;
+				h=0.200000;
+			};
+		};
+		create[]=
+		{
+			"%VARIABLE_NAME = ([""%VARIABLE_NAME"",%NAME,%TEXT,%MARKER_TYPE,"""",%COLOR,[%A, %B],%ANGLE,%POSITION,%CONDITION,%PREVIEW_SIDE,%PREVIEW_UNIT,%PREVIEW_SIZE,%PREVIEW_MODIFIER,[%SIDE_POSITION,%SIDE_DOWN],%SIDE_SCALE,[%SIZE_POSITION,%SIZE_DOWN],%SIZE_SCALE,[%UNIT_POSITION,%UNIT_DOWN],%UNIT_SCALE,[%MODIFIER_POSITION,%MODIFIER_DOWN],%MODIFIER_SCALE,%AUTOSCALE] + [%PARENT_UNIT]) call _func_COC_Marker_Tactical_Create;"
+		};
+		update[]=
+		{
+			"[%NAME,%TEXT,%MARKER_TYPE,"""",%COLOR,[%A, %B],%ANGLE,%POSITION,%CONDITION,%PREVIEW_SIDE,%PREVIEW_UNIT,%PREVIEW_SIZE,%PREVIEW_MODIFIER,[%SIDE_POSITION,%SIDE_DOWN],%SIDE_SCALE,[%SIZE_POSITION,%SIZE_DOWN],%SIZE_SCALE,[%UNIT_POSITION,%UNIT_DOWN],%UNIT_SCALE,[%MODIFIER_POSITION,%MODIFIER_DOWN],%MODIFIER_SCALE,""%PARENT"",""%VARIABLE_NAME"",%AUTOSCALE] call _func_COC_Marker_Tactical_Update;"
+		};
+		execDrawMap="false";
+	};
+};
+class _vehicle_3
+{
+	objectType="vehicle";
+	class Arguments
+	{
+		NAME="AC1";
+		SUB_TEAM="";
+		SIDE="all";
+		TYPE="VBS2_AU_Army_ARH_W";
+		ADVANCED="";
+		IS_ADVANCED="true";
+		BEHAVIOUR="CARELESS";
+		SPECIAL="FLY";
+		BG1="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		FUEL="1.00000";
+		BG2="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		HEALTH="1.00000";
+		BG3="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		AMMO="1.00000";
+		BG4="\vbs2\ui\Data\NewEditor\slider_back.paa";
+		PROBOFPRES="1.00000";
+		POSITION="[12316.8,9361.74,85.1486]";
+		PARENT="_group_1";
+		COLOR="[0.6,0.6,1]";
+		DISPLAY_NAME="ARH (AC1)";
+		DISPLAY_NAME_TREE="ARH (AC1)";
+	};
+};
+class _unit_4
+{
+	objectType="unit";
+	class Arguments
+	{
+		DESCRIPTION="ARH Pilot ";
+		SIDE="WEST";
+		TYPE="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+		POSITION="[12316.8,9361.74,0]";
+		COLOR="[0.6,0.6,1]";
+		COMMANDER="";
+		DRIVER="_vehicle_3";
+		GUNNER="";
+		LEADER="";
+		DISPLAY_NAME="Heli Pilot - Browning HP";
+		DISPLAY_NAME_TREE="Heli Pilot - Bro..";
+		PARENT="_group_1";
+		PARENT_UNIT="";
+	};
+};
+class _unit_5
+{
+	objectType="unit";
+	class Arguments
+	{
+		DESCRIPTION="ARH Commander ";
+		SIDE="WEST";
+		TYPE="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+		POSITION="[12316.8,9361.74,0]";
+		COLOR="[0.6,0.6,1]";
+		COMMANDER="";
+		DRIVER="";
+		GUNNER="_vehicle_3";
+		GUNNER_TURRET="[0]";
+		LEADER="_unit_4";
+		DISPLAY_NAME="Heli Pilot - Browning HP";
+		DISPLAY_NAME_TREE="Heli Pilot - Bro..";
+		PARENT="_group_1";
+		PARENT_UNIT="";
+	};
+};
+class _marker_1
+{
+	objectType="marker";
+	class Arguments
+	{
+		POSITION="[12316.8,9361.74,48.1119]";
+		NAME="m2";
+		MARKER_TYPE="TacticalMarker";
+		COLOR="ColorBlue";
+		PARENT="_group_1";
+		PARENT_UNIT="_unit_4";
+		DISPLAY_NAME="Marker m2";
+		SIDE="F1";
+		UNIT="I11";
+		SIZE="M2";
+		MODIFIER="S0";
+		PREVIEW_SIDE="\vbs2\ui\tacticmarkers\data\Frames\Friend_Units";
+		PREVIEW_UNIT="\vbs2\ui\tacticmarkers\data\Icons\Aviation";
+		PREVIEW_SIZE="\vbs2\ui\tacticmarkers\data\Modifiers\S_Team";
+		PREVIEW_MODIFIER="\vbs2\ui\tacticmarkers\data\SubRoles\Blanc";
+	};
+	class DynamicArguments
+	{
+		name="TacticalMarker";
+		class Params
+		{
+			class SIDE
+			{
+				type="configEx";
+				subtype="cfgTacticalSymbols.Sides,name";
+				description="Side Icon";
+				onInit="_control_SIDE call _func_COC_Marker_DlgChanged";
+				onChanged="_this call _func_COC_Marker_DlgChanged";
+			};
+			class SIDE_POSITION
+			{
+				type="number";
+				subtype="range(-0.05, 0.05)";
+				description="Side Icon";
+				default="0";
+				hidden=1;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_SIDE,""X""] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerPosition.sqf"")";
+			};
+			class SIDE_DOWN
+			{
+				type="number";
+				subtype="range(-0.05, 0.05)";
+				default="0";
+				hidden=1;
+				x=0.362500;
+				y=0.140000;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_SIDE,""Y""] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerPosition.sqf"")";
+			};
+			class SIDE_SCALE
+			{
+				type="number";
+				subtype="range(0.5, 1.5)";
+				description="Scale";
+				default="1";
+				x=0.210000;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_SIDE,_control_SIDE_POSITION,_control_SIDE_DOWN] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerScale.sqf"")";
+			};
+			class UNIT
+			{
+				type="configEx";
+				subtype="cfgTacticalSymbols.Units,name";
+				description="Unit Icon";
+				onChanged="_this call _func_COC_Marker_DlgChanged";
+			};
+			class UNIT_POSITION
+			{
+				type="number";
+				subtype="range(-0.05, 0.05)";
+				default="0";
+				hidden=1;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_UNIT,""X""] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerPosition.sqf"")";
+			};
+			class UNIT_DOWN
+			{
+				type="number";
+				subtype="range(-0.05, 0.05)";
+				default="0";
+				hidden=1;
+				x=0.362500;
+				y=0.200000;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_UNIT,""Y""] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerPosition.sqf"")";
+			};
+			class UNIT_SCALE
+			{
+				type="number";
+				subtype="range(0.5, 1.5)";
+				description="Scale";
+				default="1";
+				x=0.210000;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_UNIT,_control_UNIT_POSITION,_control_UNIT_DOWN] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerScale.sqf"")";
+			};
+			class SIZE
+			{
+				type="configEx";
+				subtype="cfgTacticalSymbols.Size,name";
+				description="Size Icon";
+				onChanged="_this call _func_COC_Marker_DlgChanged";
+			};
+			class SIZE_POSITION
+			{
+				type="number";
+				subtype="range(-0.05, 0.05)";
+				default="0";
+				hidden=1;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_SIZE,""X""] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerPosition.sqf"")";
+			};
+			class SIZE_DOWN
+			{
+				type="number";
+				subtype="range(-0.05, 0.05)";
+				default="0";
+				hidden=1;
+				x=0.362500;
+				y=0.260000;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_SIZE,""Y""] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerPosition.sqf"")";
+			};
+			class SIZE_SCALE
+			{
+				type="number";
+				subtype="range(0.5, 1.5)";
+				description="Scale";
+				default="1";
+				x=0.210000;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_SIZE,_control_SIZE_POSITION,_control_SIZE_DOWN] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerScale.sqf"")";
+			};
+			class MODIFIER
+			{
+				type="configEx";
+				subtype="cfgTacticalSymbols.Modifiers,name";
+				description="Modifier Icon";
+				onChanged="_this call _func_COC_Marker_DlgChanged";
+			};
+			class MODIFIER_POSITION
+			{
+				type="number";
+				subtype="range(-0.05, 0.05)";
+				default="0";
+				hidden=1;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_MODIFIER,""X""] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerPosition.sqf"")";
+			};
+			class MODIFIER_DOWN
+			{
+				type="number";
+				subtype="range(-0.05, 0.05)";
+				default="0";
+				hidden=1;
+				x=0.362500;
+				y=0.320000;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_MODIFIER,""Y""] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerPosition.sqf"")";
+			};
+			class MODIFIER_SCALE
+			{
+				type="number";
+				subtype="range(0.5, 1.5)";
+				description="Scale";
+				default="1";
+				x=0.210000;
+				w=0.145000;
+				onChanged="[_this,_control_PREVIEW_MODIFIER,_control_MODIFIER_POSITION,_control_MODIFIER_DOWN] call compile preprocessfile (""\vbs2\editor\Data\Scripts\marker\layerScale.sqf"")";
+			};
+			class PREVIEW_SIDE
+			{
+				type="picture";
+				description="Preview";
+			};
+			class PREVIEW_UNIT
+			{
+				type="picture";
+				x=0.210000;
+				y=0.350000;
+				w=0.150000;
+				h=0.200000;
+			};
+			class PREVIEW_SIZE
+			{
+				type="picture";
+				x=0.210000;
+				y=0.350000;
+				w=0.150000;
+				h=0.200000;
+			};
+			class PREVIEW_MODIFIER
+			{
+				type="picture";
+				x=0.210000;
+				y=0.350000;
+				w=0.150000;
+				h=0.200000;
+			};
+		};
+		create[]=
+		{
+			"%VARIABLE_NAME = ([""%VARIABLE_NAME"",%NAME,%TEXT,%MARKER_TYPE,"""",%COLOR,[%A, %B],%ANGLE,%POSITION,%CONDITION,%PREVIEW_SIDE,%PREVIEW_UNIT,%PREVIEW_SIZE,%PREVIEW_MODIFIER,[%SIDE_POSITION,%SIDE_DOWN],%SIDE_SCALE,[%SIZE_POSITION,%SIZE_DOWN],%SIZE_SCALE,[%UNIT_POSITION,%UNIT_DOWN],%UNIT_SCALE,[%MODIFIER_POSITION,%MODIFIER_DOWN],%MODIFIER_SCALE,%AUTOSCALE] + [%PARENT_UNIT]) call _func_COC_Marker_Tactical_Create;"
+		};
+		update[]=
+		{
+			"[%NAME,%TEXT,%MARKER_TYPE,"""",%COLOR,[%A, %B],%ANGLE,%POSITION,%CONDITION,%PREVIEW_SIDE,%PREVIEW_UNIT,%PREVIEW_SIZE,%PREVIEW_MODIFIER,[%SIDE_POSITION,%SIDE_DOWN],%SIDE_SCALE,[%SIZE_POSITION,%SIZE_DOWN],%SIZE_SCALE,[%UNIT_POSITION,%UNIT_DOWN],%UNIT_SCALE,[%MODIFIER_POSITION,%MODIFIER_DOWN],%MODIFIER_SCALE,""%PARENT"",""%VARIABLE_NAME"",%AUTOSCALE] call _func_COC_Marker_Tactical_Update;"
+		};
+		execDrawMap="false";
+	};
+};
+class _waypoint_0
+{
+	objectType="waypoint";
+	class Arguments
+	{
+		POSITION="[12767.36035, 9305.42480]";
+		TYPE="MOVE";
+		DESCRIPTION="Scenario_3_W1";
+		PARENT="_group_1";
+		PARENT_UNIT="_unit_4";
+		PREVTASK="";
+		NEXTTASK="_waypoint_3";
+		NAME="";
+	};
+};
+class _waypoint_3
+{
+	objectType="waypoint";
+	class Arguments
+	{
+		POSITION="[13015.67969, 9192.78320]";
+		TYPE="MOVE";
+		DESCRIPTION="Scenario_3_W2";
+		PARENT="_group_1";
+		PARENT_UNIT="_unit_4";
+		PREVTASK="_waypoint_0";
+		NEXTTASK="_waypoint_5";
+		NAME="";
+	};
+};
+class _waypoint_5
+{
+	objectType="waypoint";
+	class Arguments
+	{
+		POSITION="[13164.16016, 9067.34375]";
+		TYPE="MOVE";
+		DESCRIPTION="Scenario_3_W3";
+		PARENT="_group_1";
+		PARENT_UNIT="_unit_4";
+		PREVTASK="_waypoint_3";
+		NEXTTASK="_waypoint_7";
+		NAME="";
+	};
+};
+class _waypoint_7
+{
+	objectType="waypoint";
+	class Arguments
+	{
+		POSITION="[13381.75977, 8885.58398]";
+		TYPE="MOVE";
+		DESCRIPTION="Scenario_3_W4";
+		PARENT="_group_1";
+		PARENT_UNIT="_unit_4";
+		PREVTASK="_waypoint_5";
+		NEXTTASK="_waypoint_9";
+		NAME="";
+	};
+};
+class _waypoint_9
+{
+	objectType="waypoint";
+	class Arguments
+	{
+		POSITION="[13604.48145, 8701.26465]";
+		TYPE="MOVE";
+		DESCRIPTION="Scenario_3_W5";
+		PARENT="_group_1";
+		PARENT_UNIT="_unit_4";
+		PREVTASK="_waypoint_7";
+		NEXTTASK="";
+		NAME="";
+	};
+};
+class _postfix_0
+{
+	objectType="postfix";
+	class Arguments
+	{
+	};
+};

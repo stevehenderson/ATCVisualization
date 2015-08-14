@@ -1,0 +1,7 @@
+class UserViewX {
+  
+  public UserViewX() {
+  }
+  
+}
+

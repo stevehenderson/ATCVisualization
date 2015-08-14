@@ -1,0 +1,7 @@
+class ResponseEditorGUI {
+  
+  public ResponseEditorGUI() {
+  }
+  
+}
+

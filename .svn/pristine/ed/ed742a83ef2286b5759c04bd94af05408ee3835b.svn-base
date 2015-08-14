@@ -1,0 +1,218 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"vbs2_vehicles_air_helicopters_bell_uh1_ca_ch146",
+		"vbs2_vehicles_air_helicopters_boeing_ah64_gb_wah64d",
+		"vbs2_editor",
+		"vbs2_vehicles_air_planes_fairchildrepublic_a10_us_a10",
+		"vbs2_people_us_army_rifleman",
+		"vbs2_people_us_usmc_pilot_heli",
+		"vbs2_people_gb_raf_pilot_heli",
+		"cacharacters",
+		"cabuildings",
+		"desert2_buildings"
+	};
+	addOnsAuto[]=
+	{
+		"vbs2_vehicles_air_helicopters_bell_uh1_ca_ch146",
+		"vbs2_vehicles_air_helicopters_boeing_ah64_gb_wah64d",
+		"vbs2_editor",
+		"vbs2_vehicles_air_planes_fairchildrepublic_a10_us_a10",
+		"vbs2_people_us_army_rifleman",
+		"vbs2_people_us_usmc_pilot_heli",
+		"vbs2_people_gb_raf_pilot_heli",
+		"cacharacters",
+		"cabuildings",
+		"desert2_buildings"
+	};
+	randomSeed=3987971;
+	class Intel
+	{
+		briefingName="Scenario_1";
+		briefingDescription="Scenario_1";
+		startWeather=0.100000;
+		forecastWeather=0.100000;
+		year=2008;
+		month=6;
+		day=24;
+		hour=15;
+	};
+	class Groups
+	{
+		items=4;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={2245.810059,0.000000,2425.320068};
+					positionASL[]={2245.810059,0.000000,2425.320068};
+					special="CAN_COLLIDE";
+					id=0;
+					side="WEST";
+					vehicle="VBS2_US_MC_HeliPilot_W_BerettaM9";
+					leader=1;
+					skill=0.600000;
+					text="unit_5";
+					description="CH-146 - C6 Pilot ";
+				};
+				class Item1
+				{
+					position[]={2245.810059,0.000000,2425.320068};
+					positionASL[]={2245.810059,0.000000,2425.320068};
+					special="CAN_COLLIDE";
+					id=1;
+					side="WEST";
+					vehicle="VBS2_US_MC_HeliPilot_W_BerettaM9";
+					skill=0.600000;
+					text="unit_6";
+					description="CH-146 - C6 Commander ";
+				};
+				class Item2
+				{
+					position[]={2245.810059,0.000000,2425.320068};
+					positionASL[]={2245.810059,0.000000,2425.320068};
+					special="CAN_COLLIDE";
+					id=2;
+					side="WEST";
+					vehicle="VBS2_US_MC_HeliPilot_W_BerettaM9";
+					skill=0.600000;
+					text="unit_7";
+					description="CH-146 - C6 Gunner ";
+				};
+				class Item3
+				{
+					position[]={2245.810059,0.000000,2425.320068};
+					positionASL[]={2245.810059,0.000000,2425.320068};
+					special="CAN_COLLIDE";
+					id=3;
+					side="WEST";
+					vehicle="VBS2_US_MC_HeliPilot_W_BerettaM9";
+					skill=0.600000;
+					text="unit_8";
+					description="CH-146 - C6 Assistant Gunner ";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={3141.080078,0.000000,2474.459961};
+					positionASL[]={3141.080078,0.000000,2474.459961};
+					special="CAN_COLLIDE";
+					id=4;
+					side="WEST";
+					vehicle="VBS2_GB_ARMY_HeliPilot_W_L9";
+					leader=1;
+					skill=0.600000;
+					text="unit_13";
+					description="Apache AH.1 Pilot ";
+				};
+				class Item1
+				{
+					position[]={3141.080078,0.000000,2474.459961};
+					positionASL[]={3141.080078,0.000000,2474.459961};
+					special="CAN_COLLIDE";
+					id=5;
+					side="WEST";
+					vehicle="VBS2_GB_ARMY_HeliPilot_W_L9";
+					skill=0.600000;
+					text="unit_14";
+					description="Apache AH.1 Commander ";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1640.119995,0.000000,3409.760010};
+					positionASL[]={1640.119995,0.000000,3409.760010};
+					special="CAN_COLLIDE";
+					id=6;
+					side="WEST";
+					vehicle="SoldierWPilot";
+					leader=1;
+					skill=0.600000;
+					text="unit_20";
+					description="A-10A - GBU-12 Pilot ";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2421.771973,5.668490,2464.977539};
+					positionASL[]={2421.771973,5.668490,2464.977539};
+					special="CAN_COLLIDE";
+					id=7;
+					side="WEST";
+					vehicle="vbs2_us_army_rifleman_w_m4";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+					text="dummy_soldier";
+					description="observer";
+				};
+			};
+		};
+	};
+};
+class Intro
+{
+	randomSeed=7750147;
+	class Intel
+	{
+		startWeather=0.100000;
+		forecastWeather=0.100000;
+		year=2008;
+		month=6;
+		day=24;
+		hour=15;
+	};
+};
+class OutroWin
+{
+	randomSeed=10642435;
+	class Intel
+	{
+		startWeather=0.100000;
+		forecastWeather=0.100000;
+		year=2008;
+		month=6;
+		day=24;
+		hour=15;
+	};
+};
+class OutroLoose
+{
+	randomSeed=15822851;
+	class Intel
+	{
+		startWeather=0.100000;
+		forecastWeather=0.100000;
+		year=2008;
+		month=6;
+		day=24;
+		hour=15;
+	};
+};

@@ -1,0 +1,8 @@
+  <scenario>
+      <id>0</id>
+      <name>unset_scenario</name>
+      <world_center_x>0</world_center_x>
+      <world_center_y>
+          0
+      </world_center_y>
+  </scenario>

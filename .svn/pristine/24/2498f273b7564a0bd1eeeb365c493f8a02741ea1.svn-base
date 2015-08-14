@@ -1,0 +1,173 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"vbs2_vehicles_air_helicopters_nhi_nh90_au_nh90",
+		"caair",
+		"vbs2_core"
+	};
+	addOnsAuto[]=
+	{
+		"vbs2_vehicles_air_helicopters_nhi_nh90_au_nh90",
+		"caair",
+		"vbs2_core"
+	};
+	randomSeed=11938819;
+	class Intel
+	{
+		briefingName="Scenario4";
+		briefingDescription="Scenario4";
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+	class Groups
+	{
+		items=4;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13274.219727,11.433249,8985.429688};
+					special="NONE";
+					id=0;
+					side="WEST";
+					vehicle="VBS2_AU_Army_ATsoldier_D_CarlGustav";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+					text="unit_5";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13860.351563,33.706104,8812.349609};
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					leader=1;
+					skill=0.600000;
+					text="unit_1";
+					description="S-70 Pilot ";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13253.799805,30.938175,7823.189941};
+					special="NONE";
+					id=2;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					leader=1;
+					skill=0.600000;
+					text="unit_4";
+					description="MRH-90 Pilot ";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={13256.299805,11.833941,8982.870117};
+					special="NONE";
+					id=3;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					leader=1;
+					skill=0.600000;
+					text="unit_8";
+					description="S-70 Pilot ";
+				};
+				class Item1
+				{
+					position[]={13256.299805,11.833941,8982.870117};
+					special="NONE";
+					id=4;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					skill=0.600000;
+					text="unit_9";
+					description="S-70 Commander ";
+				};
+				class Item2
+				{
+					position[]={13256.299805,11.833941,8982.870117};
+					special="NONE";
+					id=5;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					skill=0.600000;
+					text="unit_10";
+					description="S-70 Gunner ";
+				};
+			};
+		};
+	};
+};
+class Intro
+{
+	randomSeed=15048707;
+	class Intel
+	{
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroWin
+{
+	randomSeed=14900739;
+	class Intel
+	{
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	randomSeed=6243331;
+	class Intel
+	{
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};

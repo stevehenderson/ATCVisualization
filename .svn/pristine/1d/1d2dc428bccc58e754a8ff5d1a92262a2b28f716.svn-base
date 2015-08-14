@@ -1,0 +1,190 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"vbs2_vehicles_air_helicopters_sikorsky_h70_au_s70",
+		"vbs2_weapons_machineguns_fn_mag_au_mag58",
+		"vbs2_people_au_adf_pilot_heli",
+		"vbs2_weapons_pistols_browning_hipower",
+		"caweapons",
+		"vbs2_vehicles_air_helicopters_eurocopter_ec665_au_arh",
+		"vbs2_weapons_launchers_70mmrocket",
+		"vbs2_weapons_launchers_agm114hellfire",
+		"vbs2_weapons_cannons_giat30",
+		"vbs2_vehicles_land_static_m3_tripod_us_m3_tripod",
+		"vbs2_weapons_machineguns_browning_m2",
+		"vbs2_people_us_usmc_rifleman",
+		"vbs2_weapons_rifles_armalite_m16_us_m16",
+		"vbs2_people_au_adf_rifleman",
+		"vbs2_weapons_rifles_steyr_aug_au_f88",
+		"vbs2_weapons_launchers_bofors_carlgustav_carlgustav_m2"
+	};
+	addOnsAuto[]=
+	{
+		"vbs2_vehicles_air_helicopters_sikorsky_h70_au_s70",
+		"vbs2_weapons_machineguns_fn_mag_au_mag58",
+		"vbs2_people_au_adf_pilot_heli",
+		"vbs2_weapons_pistols_browning_hipower",
+		"caweapons",
+		"vbs2_vehicles_air_helicopters_eurocopter_ec665_au_arh",
+		"vbs2_weapons_launchers_70mmrocket",
+		"vbs2_weapons_launchers_agm114hellfire",
+		"vbs2_weapons_cannons_giat30",
+		"vbs2_vehicles_land_static_m3_tripod_us_m3_tripod",
+		"vbs2_weapons_machineguns_browning_m2",
+		"vbs2_people_us_usmc_rifleman",
+		"vbs2_weapons_rifles_armalite_m16_us_m16",
+		"vbs2_people_au_adf_rifleman",
+		"vbs2_weapons_rifles_steyr_aug_au_f88",
+		"vbs2_weapons_launchers_bofors_carlgustav_carlgustav_m2"
+	};
+	randomSeed=8801283;
+	class Intel
+	{
+		briefingName="Scenario3";
+		briefingDescription="Scenario3";
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13243.500000,15.733345,8931.660156};
+					special="NONE";
+					id=0;
+					side="WEST";
+					vehicle="VBS2_AU_Army_ATsoldier_D_CarlGustav";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+					text="unit_8";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={13248.599609,11.199311,8990.540039};
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					leader=1;
+					skill=0.600000;
+					text="unit_1";
+					description="S-70 Pilot ";
+				};
+				class Item1
+				{
+					position[]={13248.599609,11.199311,8990.540039};
+					special="NONE";
+					id=2;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					skill=0.600000;
+					text="unit_2";
+					description="S-70 Commander ";
+				};
+				class Item2
+				{
+					position[]={13248.599609,11.199311,8990.540039};
+					special="NONE";
+					id=3;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					skill=0.600000;
+					text="unit_3";
+					description="S-70 Gunner ";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={12316.799805,35.148632,9361.740234};
+					special="NONE";
+					id=4;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					leader=1;
+					skill=0.600000;
+					text="unit_4";
+					description="ARH Pilot ";
+				};
+				class Item1
+				{
+					position[]={12316.799805,35.148632,9361.740234};
+					special="NONE";
+					id=5;
+					side="WEST";
+					vehicle="VBS2_AU_Army_HeliPilot_W_BrowningHP";
+					skill=0.600000;
+					text="unit_5";
+					description="ARH Commander ";
+				};
+			};
+		};
+	};
+};
+class Intro
+{
+	randomSeed=338947;
+	class Intel
+	{
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroWin
+{
+	randomSeed=9214979;
+	class Intel
+	{
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
+class OutroLoose
+{
+	randomSeed=16083971;
+	class Intel
+	{
+		startWeather=0.100000;
+		forecastWeather=0.300000;
+		year=2007;
+		month=6;
+		day=7;
+		hour=8;
+	};
+};
